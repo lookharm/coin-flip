@@ -1,4 +1,4 @@
-const contractAddress = "0x00c36cF84A5b63C59F0A5563c773F6EE9a5D8CB7";
+const contractAddress = "0x22AE913ffee8aca097E38C2B960c27eB212004B6";
 
 async function getWeb3() {
     return new Promise((resolve, reject) => {
@@ -17,7 +17,6 @@ async function getWeb3() {
         });
     })
 }
-
 
 async function getContract() {
     const data = await $.getJSON("./contracts/coinflip.json");
@@ -89,6 +88,13 @@ async function startApp() {
             await systemBalance(web3, contract);
             await yourBalance(web3, contract, accounts);        
             setFlipResult(_result, _reward);
+        } else {
+            console.log(error);
+        }
+    })
+    contract.events.Donate(async (error, result) => {
+        if (!error) {
+            await systemBalance(web3, contract); 
         } else {
             console.log(error);
         }

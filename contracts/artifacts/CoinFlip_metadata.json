@@ -1,0 +1,131 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_balance",
+						"type": "uint256"
+					}
+				],
+				"name": "Donate",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_reward",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "_result",
+						"type": "bool"
+					}
+				],
+				"name": "Flip",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "donate",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "flip",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/coinflip.sol": "CoinFlip"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/coinflip.sol": {
+			"keccak256": "0x78d1235659fd0ab9150562988a840cb2aa8a35d6df09592a88ac39b1aa6af6fb",
+			"urls": [
+				"bzz-raw://515615034db9857100e03a546b36fe1862ed0c06db9ea29dc490a8bf2a1ded2f",
+				"dweb:/ipfs/QmNmoL1bWrhkP11HCxJj9zdQ8HAQ5dU2sitbp1Q3BN8zSY"
+			]
+		},
+		"contracts/owner.sol": {
+			"keccak256": "0x1e85491a755789ba9b7d08b946f1daae1db9c255b5c745ba3cf295c46805d88b",
+			"urls": [
+				"bzz-raw://f2b894c398a4674cd7c1f2578d873bb7c3433a37a24d03c584c78790f4469ad9",
+				"dweb:/ipfs/QmVzc829Px3X4q587gDbpbHVkXkzG8npCHrDNQVFLL1piA"
+			]
+		}
+	},
+	"version": 1
+}

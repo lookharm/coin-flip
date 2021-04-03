@@ -4,6 +4,7 @@ import "./owner.sol";
 
 contract CoinFlip is Owner {
     event Flip(uint _reward, bool _result);
+    event Donate(uint _balance);
     
     uint minStake = 10 wei;
     uint returnRate = 2;
@@ -29,7 +30,9 @@ contract CoinFlip is Owner {
         emit Flip(reward, rand >= 50);
     }
     
-    function donate() external payable {}
+    function donate() external payable {
+        emit Donate(address(this).balance);
+    }
     
     function getBalance() external view returns(uint) {
         return address(this).balance;

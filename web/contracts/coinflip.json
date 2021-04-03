@@ -5,6 +5,19 @@
 			{
 				"indexed": false,
 				"internalType": "uint256",
+				"name": "_balance",
+				"type": "uint256"
+			}
+		],
+		"name": "Donate",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
 				"name": "_reward",
 				"type": "uint256"
 			},
