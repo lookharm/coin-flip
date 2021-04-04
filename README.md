@@ -9,4 +9,4 @@ Read the contract before you stake it.
 
 ### Rinkeby Testnet
 https://d-coinflip.herokuapp.com/
- - Metamsk Wallet
+ - Metamask Wallet
